@@ -1,6 +1,46 @@
 # Created by https://www.toptal.com/developers/gitignore/api/windows,angular,java,visualstudiocode,jetbrains
 # Edit at https://www.toptal.com/developers/gitignore?templates=windows,angular,java,visualstudiocode,jetbrains
 
+HELP.md
+.gradle
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**/build/
+!**/src/test/**/build/
+.gitignore_1
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+bin/
+!**/src/main/**/bin/
+!**/src/test/**/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+out/
+!**/src/main/**/out/
+!**/src/test/**/out/
+
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+### VS Code ###
+.vscode/
+
+
 ### Angular ###
 ## Angular ##
 # compiled output
