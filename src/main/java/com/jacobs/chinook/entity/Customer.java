@@ -66,5 +66,11 @@ public class Customer {
     @Column(name = "Email", nullable = false)
     private String email;
 
+    @ManyToOne
+    @JoinColumn(name = "SupportRepId")
+    private Employee supportRep;
+
+
+
 
 }
