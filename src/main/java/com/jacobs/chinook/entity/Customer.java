@@ -19,21 +19,21 @@ public class Customer {
 
     @NonNull
     @NotNull
-    @Size(min = 1, max = 40)
+    @Size(max = 40)
     @Column(name = "FirstName", nullable = false)
     private String firstName;
 
     @NonNull
     @NotNull
-    @Size(min = 1, max = 20)
+    @Size(max = 20)
     @Column(name = "LastName", nullable = false)
     private String lastName;
 
-    @Size(min = 1, max = 80)
+    @Size(max = 80)
     @Column(name = "Company")
     private String company;
 
-    @Size(min = 1, max = 70)
+    @Size(max = 70)
     @Column(name = "Address")
     private String address;
 
