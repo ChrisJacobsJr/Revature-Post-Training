@@ -1,10 +1,10 @@
 package com.jacobs.chinook.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.OneToOne;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
+
+import java.io.Serializable;
 
 @Entity
 @Getter
@@ -12,15 +12,32 @@ import lombok.*;
 @NoArgsConstructor
 @RequiredArgsConstructor
 public class PlaylistTrack {
-    @OneToOne
+
+    @EmbeddedId
+    private PlaylistTrackId id;
+
+    @ManyToOne
+    @MapsId("playlistId")
+    @JoinColumn(name = "PlaylistId", nullable = false)
     @NonNull
     @NotNull
-    @JoinColumn(name = "PlaylistId", nullable = false)
     private Playlist playlist;
 
-    @OneToOne
+    @ManyToOne
+    @MapsId("trackId")
+    @JoinColumn(name = "TrackId", nullable = false)
     @NonNull
     @NotNull
-    @JoinColumn(name = "TrackId", nullable = false)
     private Track track;
+}
+
+@Embeddable
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
+@EqualsAndHashCode
+class PlaylistTrackId implements Serializable {
+    private Integer playlistId;
+    private Integer trackId;
 }
