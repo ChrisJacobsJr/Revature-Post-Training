@@ -5,10 +5,10 @@ import jakarta.validation.constraints.NotNull;
 import lombok.*;
 
 @Entity
-@NoArgsConstructor
-@RequiredArgsConstructor
 @Getter
 @Setter
+@NoArgsConstructor
+@RequiredArgsConstructor
 public class Genre {
     @Id
     @Column(name = "GenreId")
