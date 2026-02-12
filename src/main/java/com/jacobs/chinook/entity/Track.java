@@ -56,5 +56,5 @@ public class Track {
     @NotNull
     @Column(name = "UnitPrice", nullable = false, precision = 10, scale = 2)
     private BigDecimal unitPrice;
-    
+
 }
