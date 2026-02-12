@@ -1,6 +1,7 @@
 package com.jacobs.chinook.entity;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
 import lombok.*;
@@ -73,6 +74,7 @@ public class Employee {
     @Column(name = "Fax")
     private String faxNumber;
 
+    @Email
     @Size(min = 1, max = 60)
     @Column(name = "Email")
     private String email;
