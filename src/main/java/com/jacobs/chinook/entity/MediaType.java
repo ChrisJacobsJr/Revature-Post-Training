@@ -12,7 +12,6 @@ import lombok.*;
 public class MediaType {
     @Id
     @Column(name = "MediaTypeId")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NonNull

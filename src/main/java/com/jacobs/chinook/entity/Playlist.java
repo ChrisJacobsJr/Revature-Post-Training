@@ -11,7 +11,6 @@ import lombok.*;
 @RequiredArgsConstructor
 public class Playlist {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "PlaylistId")
     private Integer id;
 

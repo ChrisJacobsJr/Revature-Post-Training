@@ -13,7 +13,6 @@ import lombok.*;
 public class Artist {
     @Id
     @Column(name = "ArtistId")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NonNull
