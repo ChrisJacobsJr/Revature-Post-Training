@@ -2,6 +2,7 @@ package com.jacobs.chinook.entity;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import lombok.*;
 
 @Entity
@@ -17,6 +18,7 @@ public class Genre {
 
     @NonNull    // lombok, used for RequiredArgsConstructor
     @NotNull    // persistence, used for @Valid on vars in a method field
+    @Size(max = 120) // used for @Valid to check constraints
     @Column(name = "Name", nullable = false)
     private String name;
 
