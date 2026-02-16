@@ -13,7 +13,6 @@ import lombok.*;
 public class Genre {
     @Id
     @Column(name = "GenreId")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NonNull    // lombok, used for RequiredArgsConstructor

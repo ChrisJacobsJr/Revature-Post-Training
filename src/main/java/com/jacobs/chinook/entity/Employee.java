@@ -16,7 +16,6 @@ import java.time.LocalDateTime;
 @RequiredArgsConstructor
 public class Employee {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "EmployeeId")
     private Integer id;
 

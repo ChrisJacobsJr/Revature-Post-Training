@@ -16,7 +16,6 @@ import java.math.BigDecimal;
 @RequiredArgsConstructor
 public class InvoiceLine {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "InvoiceLineId")
     private Integer id;
 

@@ -13,7 +13,6 @@ import lombok.*;
 @RequiredArgsConstructor
 public class Customer {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "CustomerId")
     private Integer id;
 

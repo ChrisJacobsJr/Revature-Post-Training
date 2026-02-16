@@ -15,7 +15,6 @@ import java.math.BigDecimal;
 public class Track {
     @Id
     @Column(name = "TrackId")
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
     @NonNull
