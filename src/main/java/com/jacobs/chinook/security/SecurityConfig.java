@@ -1,7 +1,5 @@
 package com.jacobs.chinook.security;
 
-import com.jacobs.chinook.security.JwtAuthFilter;
-import com.jacobs.chinook.security.UserDetailsServiceImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -38,7 +36,10 @@ public class SecurityConfig {
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS)
                 )
                 .authenticationProvider(authenticationProvider())
-                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
+                .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class)
+                .securityContext(context -> context
+                        .requireExplicitSave(false)
+                );
 
         return http.build();
     }
