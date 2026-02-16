@@ -11,7 +11,8 @@ import java.util.UUID;
 @Setter
 @NoArgsConstructor
 @RequiredArgsConstructor
-@Table(name = "User")
+//@Table(name = "User")
+@Table(name = "\"User\"")
 public class AppUser {
     @Id
     @Column(name = "UserId")
