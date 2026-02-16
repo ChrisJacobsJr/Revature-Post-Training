@@ -1,4 +1,4 @@
-package com.jacobs.chinook.utils;
+package com.jacobs.chinook.security;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
