@@ -1,4 +1,4 @@
-package com.jacobs.chinook.service;
+package com.jacobs.chinook.security;
 
 import com.jacobs.chinook.entity.AppUser;
 import com.jacobs.chinook.repository.UserRepository;
