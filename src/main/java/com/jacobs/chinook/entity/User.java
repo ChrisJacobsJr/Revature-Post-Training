@@ -30,4 +30,12 @@ public class User {
     @Column(name = "Role", nullable = false)
     private String role;
 
+    @OneToOne
+    @JoinColumn(name = "CustomerId", referencedColumnName = "CustomerId")
+    private Customer customer;
+
+    @OneToOne
+    @JoinColumn(name = "EmployeeId", referencedColumnName = "EmployeeId")
+    private Employee employee;
+
 }
