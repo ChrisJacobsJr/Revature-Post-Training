@@ -63,7 +63,7 @@
 
 
 ## New Database Tables & Entities
-### User
+### User (Implemented)
 Users are used to handle logging in as a customer or employer. They have:
 - an id
 - a username
@@ -74,7 +74,7 @@ Users are used to handle logging in as a customer or employer. They have:
 ### Ticket & Message
 Implement a ticketing system:
 - Messages table & Ticket table (organizes messages into ticket threads)
-- Ticket records have an id, a customerid, employerid, and status (open/closed/etc)
+- Ticket records have an id, a customerid, employeeid, a status (open/closed), and a resolved flag.
   - Created by customers
 - Message records have an Id, TicketId, SenderId (user), and text
   - Created by customers/employers
