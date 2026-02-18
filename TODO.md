@@ -43,8 +43,8 @@
 5. Start with custom SQL queries for repository actions (incomplete: didn't start)
 
 ### 2/18/2026
-0. Implement Ticket and Message entities
-   - uncomment Ticket and Message repositories
+0. Implement Ticket and Message entities (completed)
+   - uncomment Ticket and Message repositories (completed)
 1. Implement service methods
    - Create relevant DTO's
    - Implement required repository methods
@@ -74,7 +74,7 @@ Users are used to handle logging in as a customer or employer. They have:
 ### Ticket & Message
 Implement a ticketing system:
 - Messages table & Ticket table (organizes messages into ticket threads)
-- Ticket records have an id, a customerid, employeeid, a status (open/closed), and a resolved flag.
+- Ticket records have an id, a customerId, employeeId, a status (open/closed), and a resolved flag.
   - Created by customers
 - Message records have an Id, TicketId, SenderId (user), and text
   - Created by customers/employers
