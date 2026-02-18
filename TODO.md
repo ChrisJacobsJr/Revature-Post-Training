@@ -43,11 +43,19 @@
 5. Start with custom SQL queries for repository actions (incomplete: didn't start)
 
 ### 2/18/2026
-1. Implement service class methods
+1. Implement service methods
+   - Create relevant DTO's
    - Implement required repository methods
+   - Including SQL queries
 2. Implement controllers 
 3. Introduce testing to the project
-4. Make unit tests for Service & Repository 
+4. Make unit tests for Service & Repository
+
+### 2/19/2026
+1. Refactor project such that there is a frontend and backend folder
+   - do a quick convention check. I will be using Docker compose
+2. Initialize Angular
+3. Create views with dummy data
 
 
 
