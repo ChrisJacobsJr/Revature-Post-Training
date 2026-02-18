@@ -1,5 +1,6 @@
 package com.jacobs.chinook.entity;
 
+import com.jacobs.chinook.utils.Role;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotNull;
 import lombok.*;
@@ -32,7 +33,8 @@ public class AppUser {
     @NonNull
     @NotNull
     @Column(name = "Role", nullable = false)
-    private String role;
+    @Enumerated(EnumType.STRING)
+    private Role role;
 
     @OneToOne
     @JoinColumn(name = "CustomerId", referencedColumnName = "CustomerId")
@@ -43,3 +45,4 @@ public class AppUser {
     private Employee employee;
 
 }
+
