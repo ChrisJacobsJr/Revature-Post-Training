@@ -18,15 +18,15 @@
 3. Set up JWT with Spring Security (presumably complete)
 
 ### 2/17/2026
-1. Set up service classes for MVP
-2. Customer:
+1. Set up service class skeletons for MVP (complete)
+2. Customer: (complete)
    - Given a customer, get all tracks the customer owns
      - Use TrackRepository getOwnedTracksByCustomerId(id)
    - Given a user (who is a customer), create & persist a Ticket object
      - Doable with basic TicketRepository functions
      - Check in the service to verify the user's role is customer
 
-3. Employee:
+3. Employee: (complete)
    - Sales metrics: 
      - list customers who have been assisted (find by checking 'resolved' tickets)
      - Given a customer, find their purchases (organize by invoice, list prices) by their id
@@ -35,17 +35,20 @@
        - InvoiceRepository
    - Given a support ticket, close it
      - should be as simple as setting its status to closed and updating
-4. Users:
+4. Users: (complete)
    - Given a user & Ticket id, create a message, associate it with a Ticket & the user
        - Check to ensure that only the people in the Ticket can post messages to it
    - Given a ticket id, receive all messages, plus the Ticket object itself in one censored DTO
        - Again, check to ensure only involved persons can make this request
-5. Start with custom SQL queries for repository actions
+5. Start with custom SQL queries for repository actions (incomplete: didn't start)
 
 ### 2/18/2026
-1. Introduce testing to the project
-2. Make unit tests for Service & Repository, if finished 
-3. Replace this line with more things
+1. Implement service class methods
+   - Implement required repository methods
+2. Implement controllers 
+3. Introduce testing to the project
+4. Make unit tests for Service & Repository 
+
 
 
 
