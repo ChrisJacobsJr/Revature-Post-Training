@@ -1,7 +1,7 @@
 package com.jacobs.chinook.service;
 
 /**
- * Retrieves information about customers
+ * Retrieves info about/related to customers
  */
 public class CustomerService {
     // List<Track> getOwnedTracks(customerId)

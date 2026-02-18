@@ -1,8 +1,8 @@
 package com.jacobs.chinook.service;
 
 /**
- * Manipulates Tickets and Messages
- * Retrieves info about Tickets and Messages
+ * Manipulates tickets and messages
+ * Retrieves info about/related to tickets and messages
  *
  * Note: Use Spring Security if possible
  */
