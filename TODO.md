@@ -43,6 +43,8 @@
 5. Start with custom SQL queries for repository actions (incomplete: didn't start)
 
 ### 2/18/2026
+0. Implement Ticket and Message entities
+   - uncomment Ticket and Message repositories
 1. Implement service methods
    - Create relevant DTO's
    - Implement required repository methods
