@@ -45,13 +45,11 @@
 ### 2/18/2026
 0. Implement Ticket and Message entities (completed)
    - uncomment Ticket and Message repositories (completed)
-1. Implement service methods
-   - Create relevant DTO's
+1. Implement service methods (partially complete)
+   - Create relevant DTO's and have them returned by the service methods
    - Implement required repository methods
    - Including SQL queries
-2. Implement controllers 
-3. Introduce testing to the project
-4. Make unit tests for Service & Repository
+2. Implement controllers
 
 ### 2/19/2026
 1. Refactor project such that there is a frontend and backend folder
