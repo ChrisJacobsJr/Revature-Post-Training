@@ -27,8 +27,7 @@ public class Message {
     @ManyToOne(optional = false)
     @JoinColumn(name = "SenderId", nullable = false)
     private AppUser sender;
-
-    // TODO: consider adding encryption for this
+    
     @NonNull
     @NotNull
     @Column(name = "Text")
