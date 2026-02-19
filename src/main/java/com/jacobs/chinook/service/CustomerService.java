@@ -11,7 +11,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 /**
- * Retrieves info about/related to customers
+ * Retrieves info about/related to customers. This class is NOT about the
+ * customer use case, but rather the customer object itself.
  */
 @Service
 public class CustomerService {
@@ -29,22 +30,25 @@ public class CustomerService {
      * @return a list of Track SpringBoot @Entity's
      */
     public List<Track> getOwnedTracks(Integer customerId) {
-        return trackRepository.getOwnedTracksByCustomerId(customerId);
+        List<Track> tracks = trackRepository.getOwnedTracksByCustomerId(customerId)
+        return null;
     }
 
     /**
      * Returns a list of InvoiceLine entities for the purpose of viewing a given customer's purchases
      * TODO: see if authentication here would be best practice, or an unnecessary limitation
+     * todo alternatively, make it so that the DTO changes depending on who the user is
      * @param customerId
      * @return a list of InvoiceLine @Entity's
      */
     public List<InvoiceLine> getCustomerPurchases(Integer customerId) {
-        return invoiceLineRepository.getCustomerPurchases(customerId);
+        List<InvoiceLine> purchases = invoiceLineRepository.getCustomerPurchases(customerId);
+        return null;
     }
 
     /**
      * Returns the total spending for a given customer
-     * TODO: see above
+     * TODO: add an annotation so only employees can access this
      * @param customerId
      * @return a double representing the total expenditure of a given customer
      */

@@ -21,8 +21,10 @@ public class TicketService {
     @Autowired
     private MessageRepository messageRepository;
 
+    // TODO: Spring Security annotations for role control with some of these.
     Ticket createTicket(Integer userId, String issue) {
         // check to ensure user is a customer
+        
         return null;
     }
 
