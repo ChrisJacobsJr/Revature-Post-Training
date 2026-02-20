@@ -43,17 +43,25 @@
 5. Start with custom SQL queries for repository actions (incomplete: didn't start)
 
 ### 2/18/2026
-1. Implement service class methods
+0. Implement Ticket and Message entities (completed)
+   - uncomment Ticket and Message repositories (completed)
+1. Implement service methods (partially complete)
+   - Create relevant DTO's and have them returned by the service methods
    - Implement required repository methods
-2. Implement controllers 
-3. Introduce testing to the project
-4. Make unit tests for Service & Repository 
+   - Including SQL queries
+2. Implement controllers
+
+### 2/19/2026
+1. Refactor project such that there is a frontend and backend folder
+   - do a quick convention check. I will be using Docker compose
+2. Initialize Angular
+3. Create views with dummy data
 
 
 
 
 ## New Database Tables & Entities
-### User
+### User (Implemented)
 Users are used to handle logging in as a customer or employer. They have:
 - an id
 - a username
@@ -64,7 +72,7 @@ Users are used to handle logging in as a customer or employer. They have:
 ### Ticket & Message
 Implement a ticketing system:
 - Messages table & Ticket table (organizes messages into ticket threads)
-- Ticket records have an id, a customerid, employerid, and status (open/closed/etc)
+- Ticket records have an id, a customerId, employeeId, a status (open/closed), and a resolved flag.
   - Created by customers
 - Message records have an Id, TicketId, SenderId (user), and text
   - Created by customers/employers
