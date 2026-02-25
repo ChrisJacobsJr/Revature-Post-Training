@@ -23,27 +23,30 @@ public class TicketService {
 
     // TODO: Spring Security annotations for role control with some of these.
     Ticket createTicket(Integer userId, String issue) {
-        // check to ensure user is a customer
+        // todo check to ensure user is a customer & userId is attached to a customer
         
         return null;
     }
 
     Ticket closeTicket(Integer userId, Integer ticketId) {
-        // check to ensure that the user is an employee
+        // todo check to ensure that the user is an employee
         return null;
     }
 
     Ticket reopenTicket(Integer userId, Integer ticketId) {
-        // check to ensure that the user is an employee
+        // todo check to ensure that the user is an employee
         return null;
     }
 
     Message createMessage(Integer userId, Integer ticketId, String msg) {
+        // todo ensure userId is valid for ticketId
         return null;
     }
+
     // TODO: instead of Ticket, return a DTO that holds conversation history
     // some_DTO getMessageInfo(userId, ticketId)
     Ticket getMessageInfo(Integer userId, Integer ticketId) {
+
         return null;
     }
 
