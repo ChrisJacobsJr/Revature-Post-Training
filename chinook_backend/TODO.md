@@ -45,17 +45,23 @@
 ### 2/18/2026
 0. Implement Ticket and Message entities (completed)
    - uncomment Ticket and Message repositories (completed)
-1. Implement service methods (partially complete)
+1. Implement service methods (partially completed)
    - Create relevant DTO's and have them returned by the service methods
    - Implement required repository methods
-   - Including SQL queries
-2. Implement controllers
+   - Including SQL queries 
+2. Implement controllers (not completed)
 
 ### 2/19/2026
 1. Refactor project such that there is a frontend and backend folder
    - do a quick convention check. I will be using Docker compose
 2. Initialize Angular
 3. Create views with dummy data
+
+### 2/26/2026
+1. finish repository
+2. finish services
+3. implement controllers
+4. plan for tests
 
 
 
