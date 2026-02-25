@@ -58,10 +58,14 @@
 3. Create views with dummy data
 
 ### 2/26/2026
-1. finish repository
-2. finish services
+1. finish services
+   - Look into role auth (could delay)
+   - remember to add some reasonable auth checks
+2. finish repository
+   - Make custom sql requests
 3. implement controllers
 4. plan for tests
+   - considering playwright & JUnit
 
 
 
