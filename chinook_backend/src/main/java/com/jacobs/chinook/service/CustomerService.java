@@ -39,9 +39,9 @@ public class CustomerService {
      * @return a list of InvoiceLine @Entity's
      */
     public List<InvoiceLine> getCustomerPurchases(Integer customerId) {
-        // try to make it so that either the owning customer or an employee can call this function
+        // todo try to make it so that either the owning customer or an employee can call this function
         List<InvoiceLine> purchases = invoiceLineRepository.getCustomerPurchases(customerId);
-        // convert these into a DTO and save
+        // todo convert these into a DTO and save
         return null;
     }
 
@@ -51,7 +51,7 @@ public class CustomerService {
      * @return a double representing the total expenditure of a given customer
      */
     public double getCustomerTotalSpending(Integer customerId) {
-        // add security such that only the owning customer or an employee can access this
+        // todo add security such that only the owning customer or an employee can access this
         return invoiceLineRepository.getCustomerTotalSpending(customerId);
     }
 
