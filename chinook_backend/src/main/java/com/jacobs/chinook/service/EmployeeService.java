@@ -18,11 +18,7 @@ public class EmployeeService {
     private CustomerRepository customerRepository;
 
     /**
-     * Not sure if I should make it so that this just returns all
-     * customers who are associated with this employee via the
-     * SupportRepId foreign key, or if I should be basing "assisted" on
-     * which customers have a resolved ticket with the employee?
-     *
+     * Given an employee id, list all customers who have that employee as their service rep
      *
      * @param employeeId
      * @return
